@@ -1,0 +1,10 @@
+com\weather\display\CurrentConditionsDisplay.class
+com\weather\display\GUIDisplay.class
+com\weather\display\WeatherGraph.class
+com\weather\model\WeatherPredictor.class
+com\weather\sensor\RandomWeatherSensor.class
+com\weather\model\WeatherData.class
+com\weather\display\DisplayElement.class
+com\weather\utils\WeatherLogger.class
+com\weather\main\WeatherStation.class
+com\weather\sensor\Sensor.class

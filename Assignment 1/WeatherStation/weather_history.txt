@@ -1,0 +1,4 @@
+[2025-05-13 11:33:26] Temp: 36.92°C, Humidity: 66.35%, Pressure: 1000.02 hPa
+[2025-05-13 11:33:29] Temp: 35.06°C, Humidity: 63.14%, Pressure: 997.69 hPa
+[2025-05-13 11:33:35] Temp: 29.81°C, Humidity: 74.32%, Pressure: 1004.04 hPa
+[2025-05-13 11:33:38] Temp: 17.39°C, Humidity: 57.82%, Pressure: 980.53 hPa
