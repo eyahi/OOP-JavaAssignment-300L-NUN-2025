@@ -37,6 +37,11 @@ public class MusicPlayer {
         return library;
     }
 
+    // ✅ Cleaner method name for general library access
+    public List<Song> getLibrary() {
+        return library;
+    }
+
     public void createPlaylist(String name) {
         if (name != null && !name.isEmpty() && !playlists.containsKey(name)) {
             playlists.put(name, new Playlist(name));
@@ -65,7 +70,6 @@ public class MusicPlayer {
         if (song != null) {
             currentSong = song;
             isPlaying = true;
-            // For GUI playback, actual audio is handled in the controller
             System.out.println("Playing: " + song.getTitle());
         }
     }
@@ -91,7 +95,7 @@ public class MusicPlayer {
         } else {
             System.out.println("All Songs in Library:");
             for (Song song : library) {
-                System.out.println(" - " + song.toString());
+                System.out.println(" - " + song);
             }
         }
     }
