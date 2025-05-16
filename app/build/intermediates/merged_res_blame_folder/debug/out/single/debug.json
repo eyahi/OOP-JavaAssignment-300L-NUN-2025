@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-merged_res-28:/drawable_ic_travel_icon.png.flat",
+        "source": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-main-30:/drawable/ic_travel_icon.png"
+    },
+    {
+        "merged": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-merged_res-28:/layout_activity_flight_search.xml.flat",
+        "source": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-main-30:/layout/activity_flight_search.xml"
+    },
+    {
+        "merged": "com.travel.app-merged_res-28:/layout_activity_booking_list.xml.flat",
+        "source": "com.travel.app-main-30:/layout/activity_booking_list.xml"
+    },
+    {
+        "merged": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-merged_res-28:/anim_slide_out_left.xml.flat",
+        "source": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-main-30:/anim/slide_out_left.xml"
+    },
+    {
+        "merged": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-merged_res-28:/layout_activity_bookings.xml.flat",
+        "source": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-main-30:/layout/activity_bookings.xml"
+    },
+    {
+        "merged": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-merged_res-28:/anim_fade_in.xml.flat",
+        "source": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-main-30:/anim/fade_in.xml"
+    },
+    {
+        "merged": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-merged_res-28:/anim_slide_in_right.xml.flat",
+        "source": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-main-30:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-merged_res-28:/layout_activity_booking_list.xml.flat",
+        "source": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-main-30:/layout/activity_booking_list.xml"
+    },
+    {
+        "merged": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-merged_res-28:/layout_activity_hotel_search.xml.flat",
+        "source": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-main-30:/layout/activity_hotel_search.xml"
+    },
+    {
+        "merged": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "/Users/elijahagala/.gradle/daemon/8.9/com.travel.app-main-30:/layout/activity_main.xml"
+    }
+]

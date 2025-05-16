@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.travel">
+
+    <application
+        android:allowBackup="true"
+        android:label="TravelBookingApp"
+        android:icon="@drawable/ic_travel_icon"
+        android:roundIcon="@drawable/ic_travel_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TravelBookingApp">
+
+  
+        <activity android:name=".ui.HotelSearchActivity" />
+        <activity android:name=".ui.FlightSearchActivity" />
+        <activity android:name=".ui.BookingsActivity" />
+
+        <activity android:name=".ui.MainMenuActivity" android:exported="true">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>
+
+
+        <activity android:name=".ui.MainActivity" android:exported="false" />
+    </application>
+
+</manifest>

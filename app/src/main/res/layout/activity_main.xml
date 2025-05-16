@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <Button
+        android:id="@+id/btnFlights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Search Flights" />
+
+    <Button
+        android:id="@+id/btnHotels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Hotels"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnBookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Bookings" />
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit App"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
