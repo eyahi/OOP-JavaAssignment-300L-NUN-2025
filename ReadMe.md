@@ -1,60 +1,163 @@
-Creating a pull request is a common workflow in collaborative software development, particularly when using version control systems like Git. The original repository is https://github.com/eyahi/OOP-JavaAssignment-300L-NUN-2025.git and you do not have write access to it, you will need to make a pull request for me to see your work. The steps to do pull request are given below
+#  Members
+**Name:** Eyitayo Akiode
+          Chukwurah Sean 
+          
+**Student ID:** 20221971
+                20221125
 
-1. Fork the Repository:
+# 🎵 JavaFX Music Player
 
-If you don't have write access to the original repository, you need to fork it. This creates a copy of the repository under your GitHub account.
+A full-featured, object-oriented desktop music player built in Java using JavaFX.  
+Includes playlist support, metadata display, local library loading, threaded media playback, and a responsive GUI.
 
-2. Clone the Repository:
+---
 
-Clone your forked repository to your local machine using the `git clone` command. Replace `<repository>` with the URL of your forked repository.
+## 🗂️ Project Structure
 
-git clone https://github.com/your-username/your-forked-repository.git
-cd your-forked-repository
+```
+MusicPlayerApp/
+├── src/
+│   └── com/musicplayer/
+│       ├── model/
+│       │   ├── Song.java
+│       │   ├── Playlist.java
+│       │   └── MusicPlayer.java
+│       ├── main/
+│       │   ├── MusicPlayerApp.java
+│       │   ├── SongDialog.java
+│       │   └── TextInputDialogHelper.java
+│       └── util/
+│           └── LocalLibraryLoader.java
+├── resources/
+│   └── music/
+└── README.md
+```
 
+---
 
-3. Create a Branch:
+## 🚀 Features
 
-Create a new branch for your changes. It's a good practice to create a branch for each feature or bug fix.
+- ✅ Add songs from disk with title, artist, genre metadata.
+- ✅ Play, pause, and stop individual tracks.
+- ✅ Display playlists and add/remove songs from them.
+- ✅ Play entire playlists sequentially.
+- ✅ Search songs by title in real time.
+- ✅ Preload local library (`resources/music/`) on startup.
+- ✅ Media playback runs on a background thread for UI responsiveness.
+- ✅ GUI built in JavaFX with responsive layout and controls.
 
-git checkout -b branch-name
+---
 
-4. Make Changes:
+## 🛠️ Requirements
 
-Make the necessary changes to the codebase on your local machine. In the changes add your code to the right assignment, like add to Assignment 1 folder 
+- Java 24+
+- JavaFX SDK (24+)
 
-5. Commit Changes:
+Download JavaFX SDK here: https://gluonhq.com/products/javafx/
 
-Once you've made your changes, commit them to your local branch.
+---
 
-git add .
-git commit -m "Your name’s assignment"
+## 🧪 Running the App
 
-6. Push Changes:
+### Compile
 
-Push your changes to your forked repository on GitHub.
+```bash
+javac --module-path /path/to/javafx-sdk-24.0.1/lib --add-modules javafx.controls,javafx.media \
+  -d out $(find ./src -name "*.java")
+```
 
-git push origin branch-name
+### Run
 
-Although, I am fine with using the main branch
+```bash
+java --module-path /path/to/javafx-sdk-24.0.1/lib --add-modules javafx.controls,javafx.media \
+  -cp out com.musicplayer.main.musicPlayerApp
+```
 
- 7. Create a Pull Request:
+---
 
-Go to your forked repository on GitHub. You should see a notification prompting you to create a pull request. If not, navigate to the "Pull Requests" tab and click on "New Pull Request."
+## 🧱 Key Components
 
-Choose the base repository (the original repository) and the branch you want to merge into. Also, choose your forked repository and the branch with your changes.
+### Song.java
+Represents a music track with title, artist, genre, and file path.
 
-8. Provide Details:
+### Playlist.java
+Contains a named collection of `Song` objects.
 
-Write a clear and concise title and description for your pull request. Explain the purpose of your changes.
+### MusicPlayer.java
+Handles:
+- Library management
+- Playlist management
+- MediaPlayer control (play/pause/stop)
+- Playlist playback (with `setOnEndOfMedia`)
+- Background-threaded playback setup
 
-9. Submit Pull Request:
+### MusicPlayerApp.java
+Main UI controller:
+- Displays library and playlists
+- Controls playback
+- Manages user input and song display
 
-Click the "Create Pull Request" button to submit your pull request. This will notify the maintainers of the original repository that you have changes you'd like them to review.
+### SongDialog.java / TextInputDialogHelper.java
+Reusable dialogs for metadata input and playlist naming.
 
-10. Discussion and Changes:
+### LocalLibraryLoader.java
+Preloads songs from the `/resources/music/` folder.
 
-Be prepared for feedback and discussion. Make the necessary changes locally, commit them, and push them to your branch.
+---
 
-Repeat this process until your changes are approved and merged into the original repository.
+## 🎯 OOP Principles
 
+| Principle     | Implementation Example                                      |
+|---------------|-------------------------------------------------------------|
+| Encapsulation | Fields in `Song`, `Playlist` are private with getters       |
+| Abstraction   | `MusicPlayer` exposes high-level methods like `.play()`     |
+| Inheritance   | Not used in current design (single-responsibility favored)  |
+| Polymorphism  | JavaFX ListView with overridden `updateItem()` rendering    |
 
+---
+
+## 🎨 Ideas for Future Features
+
+- 🔁 Shuffle / Repeat modes
+- 💾 Save & load playlists and library to disk (e.g., JSON)
+- 🎚️ Volume slider and track seek bar
+- 🎧 Support for more formats (FLAC, OGG)
+- 🌙 Dark mode or custom themes
+- ⏳ Song duration + progress bar
+- 🔍 Filter by genre/artist
+
+---
+
+## 📦 Packaging (EXE or JAR)
+
+You can build a standalone executable using:
+
+### Option 1: JPackage (Java 24+)
+```bash
+jpackage --name MusicPlayer \
+  --input out --main-jar MusicPlayerApp.jar \
+  --main-class com.musicplayer.Main.MusicPlayerApp \
+  --module-path /path/to/javafx-sdk-17/lib \
+  --add-modules javafx.controls,javafx.media \
+  --type exe
+```
+
+### Option 2: Launch4j + JarBundler
+1. Build a `MusicPlayerApp.jar`
+2. Use Launch4j GUI to generate `.exe` wrapper
+
+---
+
+## 📌 Notes
+
+- This project assumes a relative path for resources (e.g., `src/resources/music/...`). For production, you may want to use resource loading via `getClass().getResource(...)`.
+- JavaFX `Media` only supports certain formats. Ensure `.mp3` files are well-encoded.
+- This app is tested on Java 17 + JavaFX 17.
+
+---
+
+## 📣 Credits
+
+Built as a learning project for OOP, JavaFX, and media APIs in Java.
+
+---
