@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music Player"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/inputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Song Title" />
+
+        <EditText
+            android:id="@+id/inputArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Artist" />
+
+        <EditText
+            android:id="@+id/inputGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Genre" />
+
+        <EditText
+            android:id="@+id/inputFilePath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="File Path" />
+
+        <Button
+            android:id="@+id/addSongBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Song to Library" />
+
+        <EditText
+            android:id="@+id/inputPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Playlist Name" />
+
+        <Button
+            android:id="@+id/createPlaylistBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Playlist" />
+
+
+
+        <Button
+            android:id="@+id/playBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play a song" />
+
+        <Button
+            android:id="@+id/pauseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pause" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop" />
+
+        <Button
+            android:id="@+id/viewSongsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Songs" />
+
+        <Button
+            android:id="@+id/viewPlaylistsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Playlists" />
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="12dp"
+            android:textColor="#333" />
+    </LinearLayout>
+</ScrollView>
