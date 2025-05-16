@@ -1,0 +1,34 @@
+R_DEF: Internal format may change without notice
+local
+anim fade_in
+anim slide_in_right
+anim slide_out_left
+color black
+color white
+drawable ic_travel_icon
+id bookingHeader
+id bookingsListView
+id btnBookings
+id btnExit
+id btnFlights
+id btnHotels
+id btnSearch
+id btnSearchHotels
+id editCheckIn
+id editCheckOut
+id editCity
+id editGuests
+id edtDate
+id edtFrom
+id edtPassengers
+id edtTo
+id flightListView
+id hotelListView
+id layoutBookings
+id tvBookingTitle
+layout activity_booking_list
+layout activity_bookings
+layout activity_flight_search
+layout activity_hotel_search
+layout activity_main
+style Theme.TravelBookingApp

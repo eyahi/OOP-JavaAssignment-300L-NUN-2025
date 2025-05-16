@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.travel"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] /Users/elijahagala/.gradle/caches/8.9/transforms/37d4a2ce4879fbffd52837b0168fa82b/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+12        android:name="com.travel.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] /Users/elijahagala/.gradle/caches/8.9/transforms/37d4a2ce4879fbffd52837b0168fa82b/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] /Users/elijahagala/.gradle/caches/8.9/transforms/37d4a2ce4879fbffd52837b0168fa82b/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.travel.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] /Users/elijahagala/.gradle/caches/8.9/transforms/37d4a2ce4879fbffd52837b0168fa82b/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] /Users/elijahagala/.gradle/caches/8.9/transforms/37d4a2ce4879fbffd52837b0168fa82b/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:5:5-27:19
+18        android:allowBackup="true"
+18-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] /Users/elijahagala/.gradle/caches/8.9/transforms/37d4a2ce4879fbffd52837b0168fa82b/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="true"
+22        android:icon="@drawable/ic_travel_icon"
+22-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:8:9-48
+23        android:label="TravelBookingApp"
+23-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:7:9-41
+24        android:roundIcon="@drawable/ic_travel_icon"
+24-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:9:9-53
+25        android:supportsRtl="true"
+25-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:10:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.TravelBookingApp" >
+27-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:11:9-54
+28        <activity android:name="com.travel.ui.HotelSearchActivity" />
+28-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:14:9-60
+28-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:14:19-57
+29        <activity android:name="com.travel.ui.FlightSearchActivity" />
+29-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:15:9-61
+29-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:15:19-58
+30        <activity android:name="com.travel.ui.BookingsActivity" />
+30-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:16:9-57
+30-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:16:19-54
+31        <activity
+31-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:18:9-23:12
+32            android:name="com.travel.ui.MainMenuActivity"
+32-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:18:19-54
+33            android:exported="true" >
+33-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:18:55-78
+34            <intent-filter>
+34-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:19:5-22:21
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:20:9-61
+35-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:20:17-58
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:21:9-69
+37-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:21:19-66
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:26:9-78
+41            android:name="com.travel.ui.MainActivity"
+41-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:26:19-50
+42            android:exported="false" />
+42-->/Users/elijahagala/Desktop/TravelBookingApp/app/src/main/AndroidManifest.xml:26:51-75
+43
+44        <provider
+44-->[androidx.emoji2:emoji2:1.2.0] /Users/elijahagala/.gradle/caches/8.9/transforms/7d1cfcf4031a0cdd0257edaeee68b2a4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.emoji2:emoji2:1.2.0] /Users/elijahagala/.gradle/caches/8.9/transforms/7d1cfcf4031a0cdd0257edaeee68b2a4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+46            android:authorities="com.travel.androidx-startup"
+46-->[androidx.emoji2:emoji2:1.2.0] /Users/elijahagala/.gradle/caches/8.9/transforms/7d1cfcf4031a0cdd0257edaeee68b2a4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+47            android:exported="false" >
+47-->[androidx.emoji2:emoji2:1.2.0] /Users/elijahagala/.gradle/caches/8.9/transforms/7d1cfcf4031a0cdd0257edaeee68b2a4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+48            <meta-data
+48-->[androidx.emoji2:emoji2:1.2.0] /Users/elijahagala/.gradle/caches/8.9/transforms/7d1cfcf4031a0cdd0257edaeee68b2a4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+49-->[androidx.emoji2:emoji2:1.2.0] /Users/elijahagala/.gradle/caches/8.9/transforms/7d1cfcf4031a0cdd0257edaeee68b2a4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+50                android:value="androidx.startup" />
+50-->[androidx.emoji2:emoji2:1.2.0] /Users/elijahagala/.gradle/caches/8.9/transforms/7d1cfcf4031a0cdd0257edaeee68b2a4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+51            <meta-data
+51-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/elijahagala/.gradle/caches/8.9/transforms/ce69246960f02d35bf396eb0efbd04b1/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+52                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+52-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/elijahagala/.gradle/caches/8.9/transforms/ce69246960f02d35bf396eb0efbd04b1/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+53                android:value="androidx.startup" />
+53-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/elijahagala/.gradle/caches/8.9/transforms/ce69246960f02d35bf396eb0efbd04b1/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+54        </provider>
+55    </application>
+56
+57</manifest>
