@@ -1,0 +1,6 @@
+hotelId,city,name,pricePerNight,availableRooms
+H001,London,The Savoy,300.0,20
+H002,Berlin,Berlin Suites,120.0,15
+H003,Sydney,Sydney Harbour Inn,200.0,25
+H004,Mumbai,Bollywood Hotel,80.0,30
+H005,San Francisco,Golden Gate Lodge,250.0,10

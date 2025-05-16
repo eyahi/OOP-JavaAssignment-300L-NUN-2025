@@ -1,0 +1,23 @@
+.root-pane {
+  -fx-background-color: #77d7d1;
+}
+
+.main-button {
+  -fx-background-color: #42A5F5;
+  -fx-text-fill: rgba(182, 236, 203, 0.826);
+  -fx-font-size: 16px;
+  -fx-pref-width: 250px;
+  -fx-pref-height: 50px;
+  -fx-cursor: hand;
+}
+
+.text-field, .password-field {
+  -fx-background-color: rgb(162, 154, 181);
+  -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+  -fx-pref-width: 250px;
+  -fx-pref-height: 30px;
+}
+.title {
+  -fx-font-size: 24px;
+  -fx-text-fill: #969eb8;
+}

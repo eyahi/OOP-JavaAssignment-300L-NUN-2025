@@ -1,0 +1,6 @@
+flightId,origin,destination,departureDate,price,availableSeats
+F001,New York,London,10/10/2025,550.0,100
+F002,Paris,Berlin,15/11/2025,120.0,80
+F003,Tokyo,Sydney,01/12/2025,750.0,200
+F004,Dubai,Mumbai,20/10/2025,350.0,150
+F005,Los Angeles,San Francisco,05/10/2025,90.0,120

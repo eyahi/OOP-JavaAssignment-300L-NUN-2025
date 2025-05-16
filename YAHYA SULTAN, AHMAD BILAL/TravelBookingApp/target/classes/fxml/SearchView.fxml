@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.booking.ui.SearchController"
+      spacing="10" prefWidth="600" prefHeight="500">
+  
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10"/>
+  </padding>
+
+  <!-- search inputs -->
+  <TextField fx:id="originField" promptText="Origin" />
+  <TextField fx:id="destField"   promptText="Destination" />
+  <TextField fx:id="dateField"   promptText="Date (dd/MM/yyyy)" />
+
+  <Button text="Search" onAction="#onSearchFlights" />
+
+  <!-- results table -->
+  <TableView fx:id="flightTable" VBox.vgrow="ALWAYS">
+    <columns>
+      <TableColumn text="Flight ID"    prefWidth="100">
+        <cellValueFactory>
+          <PropertyValueFactory property="flightId"/>
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn text="Origin"       prefWidth="100">
+        <cellValueFactory>
+          <PropertyValueFactory property="origin"/>
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn text="Destination"  prefWidth="100">
+        <cellValueFactory>
+          <PropertyValueFactory property="destination"/>
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn text="Date"         prefWidth="100">
+        <cellValueFactory>
+          <PropertyValueFactory property="departureDate"/>
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn text="Seats"        prefWidth="80">
+        <cellValueFactory>
+          <PropertyValueFactory property="availableSeats"/>
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn text="Price"        prefWidth="80">
+        <cellValueFactory>
+          <PropertyValueFactory property="price"/>
+        </cellValueFactory>
+      </TableColumn>
+    </columns>
+  </TableView>
+
+  <!-- actions -->
+  <Button fx:id="btnBook" text="Book Flight" onAction="#onBookFlight" />
+  <Button fx:id="btnBack" text="Back"        onAction="#onBack" />
+
+</VBox>

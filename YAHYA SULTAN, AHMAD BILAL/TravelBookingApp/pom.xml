@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <!-- 1) Minimum required fields -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.booking</groupId>
+  <artifactId>TravelBookingApp</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <!-- 2) Global properties -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>17</java.version>
+  </properties>
+
+  <!-- 3) Dependencies -->
+<dependencies>
+  <dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-csv</artifactId>
+    <version>1.10.0</version>
+  </dependency>
+
+  <!-- PDFBox for receipts -->
+  <dependency>
+    <groupId>org.apache.pdfbox</groupId>
+    <artifactId>pdfbox</artifactId>
+    <version>2.0.29</version>
+  </dependency>
+
+  <!-- JavaFX dependencies -->
+  <dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-controls</artifactId>
+    <version>17.0.2</version>
+  </dependency>
+  <dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-fxml</artifactId>
+    <version>17.0.2</version>
+  </dependency>
+</dependencies>
+
+  <!-- 4) Build plugins -->
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>0.0.8</version>
+        <configuration>
+          <mainClass>com.booking.ui.MainApp</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
