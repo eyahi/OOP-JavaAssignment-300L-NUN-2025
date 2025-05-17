@@ -1,0 +1,8 @@
+Current Weather: Temperature=38.44°C, Humidity=41.30%, Pressure=1008.76 hPa, Time=11:17:07
+Current Weather: Temperature=17.26°C, Humidity=55.06%, Pressure=981.22 hPa, Time=11:17:10
+Current Weather: Temperature=33.89°C, Humidity=64.06%, Pressure=1024.36 hPa, Time=11:17:16
+Current Weather: Temperature=25.54°C, Humidity=50.42%, Pressure=996.19 hPa, Time=11:17:19
+Current Weather: Temperature=23.13°C, Humidity=70.22%, Pressure=989.05 hPa, Time=11:21:16
+Current Weather: Temperature=17.71°C, Humidity=72.80%, Pressure=985.17 hPa, Time=11:21:19
+Current Weather: Temperature=36.01°C, Humidity=51.45%, Pressure=993.40 hPa, Time=11:21:25
+Current Weather: Temperature=35.72°C, Humidity=70.40%, Pressure=1009.81 hPa, Time=11:21:28
