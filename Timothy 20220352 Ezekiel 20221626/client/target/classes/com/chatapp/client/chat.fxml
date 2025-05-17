@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.chatapp.client.ChatController"
+      spacing="10"
+      style="-fx-padding: 10;">
+    <ListView fx:id="messages" prefHeight="400"/>
+    <HBox spacing="5">
+        <TextField fx:id="input" HBox.hgrow="ALWAYS"/>
+        <Button text="Send" onAction="#send"/>
+    </HBox>
+</VBox>
