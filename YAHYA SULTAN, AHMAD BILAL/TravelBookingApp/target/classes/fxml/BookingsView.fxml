@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.booking.ui.BookingsController"
+      prefWidth="360" prefHeight="640"
+      spacing="10">
+  <padding>
+    <Insets top="20" right="20" bottom="20" left="20"/>
+  </padding>
+
+  <TableView fx:id="bookingTable" VBox.vgrow="ALWAYS">
+    <columns>
+      <TableColumn fx:id="colBookingId" text="Booking ID" prefWidth="80">
+        <cellValueFactory>
+          <PropertyValueFactory property="bookingId"/>
+        </cellValueFactory>
+      </TableColumn>
+      
+      <TableColumn fx:id="Coluser" text="User">
+        <cellValueFactory>
+          <PropertyValueFactory property="username"/>
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn fx:id="colFlightId" text="Flight" prefWidth="80">
+        <cellValueFactory>
+          <PropertyValueFactory property="flightId"/>
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn fx:id="colHotelId" text="Hotel" prefWidth="80">
+        <cellValueFactory>
+          <PropertyValueFactory property="hotelId"/>
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn fx:id="colDate" text="Date" prefWidth="80">
+        <cellValueFactory>
+          <PropertyValueFactory property="date"/>
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn fx:id="colSeats" text="Seats" prefWidth="60">
+        <cellValueFactory>
+          <PropertyValueFactory property="seats"/>
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn fx:id="colTotalCost" text="Total" prefWidth="80">
+        <cellValueFactory>
+          <PropertyValueFactory property="totalCost"/>
+        </cellValueFactory>
+      </TableColumn>
+    </columns>
+  </TableView>
+
+  <HBox spacing="10" alignment="CENTER">
+    <Button fx:id="btnModify"
+            text="Modify Booking"
+            onAction="#onModifyBooking"
+            prefWidth="110"/>
+    <Button fx:id="btnCancel"
+            text="Cancel Booking"
+            onAction="#onCancelBooking"
+            prefWidth="110"/>
+  </HBox>
+
+  <Button fx:id="btnBack"
+          text="Back"
+          onAction="#onBack"
+          prefWidth="220"/>
+</VBox>

@@ -1,0 +1,5 @@
+bookingId,username,flightId,hotelId,bookingDate,seats,totalCost
+ed6ee58f-f441-44d2-ae8a-66285ba8941f,ahmad,F002,H002,12/05/2025,7,1680.0
+127bdb4d-918e-47db-a9a3-6fc7dbfc2b1a,ahmad,F002,H002,15/05/2025,3,480.0
+27224aab-33c5-48ed-9245-faec9abdf12d,ahmad,F002,H002,15/05/2025,7,1680.0
+dfeec73f-b544-475d-a119-b4cd302b1a90,Sultan,F004,H004,16/05/2025,5,2150.0
